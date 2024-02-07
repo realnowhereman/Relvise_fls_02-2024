@@ -43,6 +43,8 @@ body {
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ====================================================================== */
@@ -115,8 +117,46 @@ body {
   font-weight: 600;
 }
 
+.menu__link:hover {
+  color: #252b42;
+}
+
 @media (max-width: 479px) { 
   .menu__link {
     font-size: 18px;
   }
 }
+
+/* ==========PAGE============================================================ */
+
+.page {
+  flex: 1 1 auto;
+}
+
+/* ==========MAIN-BLOCK============================================================ */
+
+.page__main-block {
+}
+.main-block {
+}
+.main-block__container {
+}
+._container {
+}
+.main-block__body {
+}
+.main-block__title {
+}
+.main-block__text {
+}
+.main-block__buttons {
+}
+.main-block__button {
+}
+.main-block__button_border {
+}
+
+
+/* ==========FOOTER============================================================ */
+
+
