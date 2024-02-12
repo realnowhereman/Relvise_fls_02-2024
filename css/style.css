@@ -404,16 +404,39 @@ margin-bottom: 35px;
 
 .advantages__body {
   display: flex;
+  margin: 0 -15px;
 }
 .advantages__column {
+  padding: 0 15px;
+  flex: 0 1 25%;
 }
 .advantages__item {
+  background-color: #fff;
+  padding: 30px 40px;
+  text-align: center;
 }
+
+.advantages__item > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .advantages_icon {
+  height: 48px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 .advantages__value {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 142%;
 }
 .advantages__text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #737373;
+  letter-spacing: 0.1px;
 }
 
 
