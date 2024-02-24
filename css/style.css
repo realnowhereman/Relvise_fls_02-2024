@@ -177,6 +177,10 @@ scroll-behavior: smooth;
 
 .page__subscribe {
 }
+
+.page__getintouch {
+}
+
 /* ==========HEADER-BLOCK============================================================ */
 
 .header-block {
@@ -914,11 +918,32 @@ howeare__item {
     }
 }
 
+/* ==========GETINTOUCH============================================================ */
 
+.getintouch {
+}
+.getintouch__container {
+}
 
+.getintouch__header {
+}
 
-
-
+.getintouch__items {
+}
+.getintouch__item {
+}
+.item-getintouch {
+}
+.item-getintouch__icon {
+}
+.item-getintouch__emails {
+}
+.item-getintouch__email {
+}
+.item-getintouch__label {
+}
+.item-getintouch__button {
+}
 
 /* ==========FOOTER============================================================ */
 
