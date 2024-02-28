@@ -130,12 +130,13 @@ scroll-behavior: smooth;
 }
 .menu__link {
   color: #737373;
-  line-height: 171%;
+  line-height: calc(24 / 14 * 100%);
   font-weight: 600;
 }
 
 .menu__link:hover {
   color: #252b42;
+  text-decoration: underline;
 }
 
 @media (max-width: 479px) { 
@@ -297,6 +298,7 @@ margin-bottom: 35px;
   letter-spacing: 0.2px;
   padding: 5px 36px;
   margin: 10px 0;
+  transition: all 0.3s ease 0s;
 }
 
 @media (max-width: 479px) { 
@@ -316,9 +318,19 @@ margin-bottom: 35px;
   color: #fff;
 }
 
+.main-block__button_orange:hover {
+  background-color: #fff;
+  color: #ff7b47;
+}
+
 .main-block__button_border {
-  border: 1px solid #0D5C63;
   color: #0D5C63;
+}
+
+.main-block__button_border:hover {
+  border: 1px solid #0D5C63;
+  color: #fff;
+  background-color: #0D5C63;
 }
 
 .main-block__image {
@@ -907,8 +919,13 @@ howeare__item {
   justify-content: center;
   align-items: center;
   text-align: center;
+  cursor: pointer;
   color: #fff;
   padding: 0 22px;
+}
+
+.subscribe__button:hover {
+  background-color: #aa5330;
 }
 
 @media (min-width: 810px) { 
@@ -1117,7 +1134,7 @@ howeare__item {
 
 .footer__top {
   background-color: #17213C;
-  padding: 30px 0;
+  padding: 35px 0;
 }
 
 .footer__main {
@@ -1130,13 +1147,29 @@ howeare__item {
 }
 
 .footer__column {
-  padding: 20px 15px;
+  padding: 15px 15px;
   flex: 0 1 16.6667%;
-  min-width: 170px;
+  /* min-width: 170px; */
 }
 
 .footer__column:last-child {
   flex: 0 1 33.334%;
+}
+
+@media (max-width: 992px) { 
+  .footer__column {
+    flex: 0 1 25%;
+  }
+
+  .footer__column:last-child {
+    flex: 0 1 100%;
+  }
+}
+
+@media (max-width: 767px) { 
+  .footer__column {
+    flex: 0 1 50%;
+  }
 }
 
 .footer__label {
@@ -1207,21 +1240,16 @@ howeare__item {
   padding: 25px 0;
 }
 
-@media (min-width: 767px) { 
-  .footer__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
 .footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer__copy {
-  font-size: 14px;
-  line-height: calc(24 / 14 * 100%);
   color: #737373;
+  font-size: 14px;
+  line-height: calc(24 / 14 * 100%);  
 }
 
 .footer__social {
@@ -1233,6 +1261,17 @@ howeare__item {
 
 .social__item:not(:last-child) {
   margin-right: 20px;
+}
+
+@media (max-width: 767px) { 
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .footer__copy {
+    margin-bottom: 15px;
+    text-align: center;
+  }
 }
 
 
